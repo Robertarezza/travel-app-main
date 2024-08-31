@@ -16,8 +16,6 @@
 <template>
   <AppNavBar />
   <main>
-
-
       <router-view>
     
       </router-view>

@@ -15,8 +15,8 @@
 
             <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                 <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook ms-color"></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-youtube ms-color" ></i></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-twitter ms-color" ></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram ms-color" ></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/Robertarezza"><i class="fa-brands fa-github ms-color" ></i></a></li>
                
             </ul>
         </footer>

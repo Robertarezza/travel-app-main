@@ -24,20 +24,20 @@ export default {};
         </p>
       </div>
       <div>
-        <img src="/src/assets/img/viaggio.svg" alt="" style="width: 70%" />
+        <img src="/src/assets/img/viaggio.svg" alt="" style="" class="img1" />
       </div>
     </div>
 
     <!-- //freccie -->
     <div
-      class="container"
+      class="container freccia1"
       style="display: flex; justify-content: center; margin-top: 40px"
     >
       <img src=" /src/assets/img/linea.svg" alt="" class="rotated-image" />
     </div>
 
     <div
-      class="container"
+      class="container freccia2"
       style="display: flex; justify-content: center; margin-left: 0.5px; margin-top:40px;"
     >
       <img src=" /src/assets/img/lineacurva.svg" alt="" class="rotated-image2" />
@@ -54,7 +54,7 @@ export default {};
         margin-top: 100px;
       "
     >
-      <img src="/src/assets/img/scatta.svg" alt="" style="width: 50%" />
+      <img src="/src/assets/img/scatta.svg" alt="" style="width: 50%" class="img2"/>
       <h5>
         Crea un diario visivo del tuo viaggio caricando le tue foto preferite in ogni
         tappa!
@@ -89,12 +89,22 @@ export default {};
         Trova e Salva i Luoghi che Ami Utilizza la nostra mappa interattiva per cercare,
         aggiungere e salvare i tuoi luoghi preferiti con un semplice clic.
       </h5>
-      <img src="/src/assets/img/trova.svg" alt="" style="width: 50%" />
+      <img src="/src/assets/img/trova.svg" alt="" style="" class="img3"/>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
+.img1 {
+    width: 70%
+}
+
+.img3 {
+    width: 50%
+}
+
+
+
 .rotated-image {
   transform: rotate(141deg);
   margin-top: 40px;
@@ -119,4 +129,106 @@ export default {};
   margin-bottom: 40px;
   margin-left: 185px;
 }
+
+
+@media (max-width: 768px) {
+
+    .freccia2{
+        display: flex; 
+        justify-content: center; 
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    .rotated-image2{
+        transform: rotate(137deg);
+        width: 34%;
+        margin-left: -109px;
+        margin-top: 66px;
+        margin-right: 0;
+    }
+
+    .rotated-image {
+    transform: rotate(141deg);
+    margin-top: -16px;
+    width: 31%;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+    .img2 {
+        margin-right: 5px;
+    }
+
+    .img1 {
+        width: 100%;
+    }
+
+    .rotated-image3 {
+        transform: rotate(126deg);
+        margin-top: 60px;
+        width: 31%;
+    }
+
+
+    .rotated-image4 {
+        transform: rotate(106deg);
+    margin-top: 52px;
+    width: 34%;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+    }
+
+
+
+    @media (max-width: 425px) {
+        .freccia2{
+        display: flex; 
+        justify-content: center; 
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    .rotated-image2{
+        transform: rotate(137deg);
+        width: 34%;
+        margin-left: -109px;
+        margin-top: 66px;
+        margin-right: 0;
+    }
+
+    .rotated-image {
+    transform: rotate(141deg);
+    margin-top: -16px;
+    width: 31%;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .img2 {
+        margin-right: 5px;
+    }
+    .img1 {
+        width: 100%;
+    }
+    .rotated-image3 {
+        transform: rotate(126deg);
+        margin-top: 60px;
+        width: 31%;
+    }
+
+
+    .rotated-image4 {
+        transform: rotate(106deg);
+    margin-top: 52px;
+    width: 34%;
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+    }
+
 </style>

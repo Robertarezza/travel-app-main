@@ -205,7 +205,8 @@
      
 
         <!-- Location Cards -->
-         <div class="container mt-4  ms-card-container"> -
+         <div class="container mt-4  ms-card-container"> 
+         <h3>I luoghi dei tuoi viaggi </h3>
             <div class="row " style="flex-direction: column;">
                 <div class="col mb-4 ms-card" v-for="(location, index) in locations" :key="index">
                     <div class="card">
@@ -258,22 +259,6 @@
 
         <!-- Map Container -->
         <div ref="mapContainer" class="map-container"></div>
-
-
-   <!-- Add Location Button -->
-   <!-- <div class="d-flex" style="height: 14%; align-items: center">
-   <button type="button" class="btn btn-default btn-circle btn-lg ms-btn" data-bs-toggle="modal"
-            data-bs-target="#addLocationModal">
-            <i class="fa fa-plus"></i>
-        </button>
-        <p style="margin-left: 5px; margin-top: 4px; margin-bottom: 0 !important;">Aggiungi Luogo</p>
-    </div> -->
-
-        <!-- Show Locations Button -->
-        <!-- <button type="button" class="btn btn-default btn-circle btn-lg ms-btn-show" @click="displayLocations = !displayLocations">
-            <i class="fa fa-bars"></i>
-        </button> -->
-
 
         <!-- Marker Details Modal -->
         <div class="modal" :class="{ show: showModal }" tabindex="-1" style="display: block;" v-if="showModal">
@@ -429,4 +414,63 @@
             }
         }
     }
+
+
+
+
+    @media (max-width: 425px) {
+        .map-wrap {
+       // position: relative;
+        width: 100%;
+        height: calc(100vh - 196px);
+        display: flex;
+       // justify-content: space-around;
+        flex-direction: column-reverse
+    }
+
+    .map-container {
+        width: 100%;
+        height: 100%;
+        // display: flex;
+        // justify-content: flex-end;
+    }
+    .ms-card-container {
+        //bottom: 20px;
+        overflow-x: scroll;
+        width: 100%;
+
+        .ms-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            //align-items: stretch;
+           // height: 100%;
+
+            .card {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+               
+                align-content: center;
+                background: white;
+
+                // .ms-img {
+                //     height: 100px;
+                //     object-fit: cover;
+                // }
+
+                // .card-body {
+                //     // flex-grow: 1;
+                //     // display: flex;
+                //     // flex-direction: column;
+                //     // justify-content: space-between;
+
+                    
+                // }
+            }
+        }
+    }
+}
 </style>

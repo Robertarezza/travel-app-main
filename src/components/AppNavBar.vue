@@ -47,4 +47,13 @@ ul{
     list-style-type: none;
     color: #359cd8;
 }
+@media (max-width: 425px) {
+
+    .navbar {
+        .container {
+            justify-content: center;
+        }
+        }
+        
+}
 </style>
