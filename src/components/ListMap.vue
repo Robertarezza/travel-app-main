@@ -211,7 +211,7 @@
                 <div class="col mb-4 ms-card" v-for="(location, index) in locations" :key="index">
                     <div class="card">
                         <img :src="location.image" class="card-img-top img-fluid object-fit-cover ms-img" alt="Image"
-                            v-if="location.image">
+                            v-if="location.image" multiple>
                         <div class="card-body">
                             <h6 class="card-title">{{ location.title }}</h6>
                             <div class="vote-container">

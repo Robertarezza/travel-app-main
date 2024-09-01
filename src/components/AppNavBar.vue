@@ -11,7 +11,7 @@
                 <img src="/src/assets/img/logo.png" alt="Bootstrap" width="200" height="60">
             </a>
         
-            <ul class="d-flex g-3" style="margin-top: 15px;">
+            <ul class="d-flex g-3" style="">
           <li class="me-3 element-text2"
             style="">
             <router-link :to="{ name: 'home' }" class="nav-link p-3"
@@ -46,6 +46,7 @@ ul{
     text-decoration: none;
     list-style-type: none;
     color: #359cd8;
+    margin-top: 15px;
 }
 @media (max-width: 425px) {
 
@@ -58,8 +59,14 @@ ul{
         ul {
             margin: 0;
             padding: 0;
+
+            li{
+                margin: 0 !important;
+            }
         }
     }
+
+
         @media (max-width: 480px) {
 
 .navbar {
@@ -70,6 +77,10 @@ ul{
     ul {
             margin: 0;
             padding: 0;
+
+            li{
+                margin: 0 !important;
+            }
         }
 }
 </style>
