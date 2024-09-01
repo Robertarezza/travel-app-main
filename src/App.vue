@@ -4,8 +4,8 @@
   import AppFooter from "./components/AppFooter.vue"
    import Map from "./components/Map.vue"
     import ListMap from "./components/ListMap.vue"
-  import "@fortawesome/fontawesome-free/css/all.css";
-
+  import "@fortawesome/fontawesome-free/css/all.css"
+import 'bootstrap/js/dist/carousel.js'
   
 
   export default {

@@ -425,7 +425,9 @@
         height: calc(100vh - 196px);
         display: flex;
        // justify-content: space-around;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        
     }
 
     .map-container {
@@ -456,21 +458,58 @@
                 align-content: center;
                 background: white;
 
-                // .ms-img {
-                //     height: 100px;
-                //     object-fit: cover;
-                // }
-
-                // .card-body {
-                //     // flex-grow: 1;
-                //     // display: flex;
-                //     // flex-direction: column;
-                //     // justify-content: space-between;
-
-                    
-                // }
+              
             }
         }
     }
+
+    
+}
+
+
+@media (max-width: 480px) {
+        .map-wrap {
+       // position: relative;
+        width: 100%;
+        height: calc(100vh - 196px);
+        display: flex;
+       // justify-content: space-around;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .map-container {
+        width: 100%;
+        height: 50%;
+        // display: flex;
+        // justify-content: flex-end;
+    }
+    .ms-card-container {
+        //bottom: 20px;
+        overflow-x: scroll;
+        width: 100%;
+
+        .ms-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+
+            .card {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+               
+                align-content: center;
+                background: white;
+
+              
+            }
+        }
+    }
+
+    
 }
 </style>

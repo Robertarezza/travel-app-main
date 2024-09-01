@@ -54,6 +54,22 @@ ul{
             justify-content: center;
         }
         }
-        
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+    }
+        @media (max-width: 480px) {
+
+.navbar {
+    .container {
+        justify-content: center;
+    }
+    }  
+    ul {
+            margin: 0;
+            padding: 0;
+        }
 }
 </style>
