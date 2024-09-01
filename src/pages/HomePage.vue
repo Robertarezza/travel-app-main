@@ -55,10 +55,14 @@ export default {};
       "
     >
       <img src="/src/assets/img/scatta.svg" alt="" style="width: 50%" class="img2"/>
-      <h5>
+      <div>
+      <h3>Racconta il Tuo Viaggio</h3>
+      <p>
         Crea un diario visivo del tuo viaggio caricando le tue foto preferite in ogni
         tappa!
-      </h5>
+      </p>
+      </div>
+     
     </div>
     <!-- //freccie -->
     <div
@@ -85,10 +89,13 @@ export default {};
         margin-top: 40px;
       "
     >
-      <h5>
+    <div>
+    <h3>Scopri e Conserva i Tuoi Ricordi di Viaggio</h3>
+      <p>
         Trova e Salva i Luoghi che Ami Utilizza la nostra mappa interattiva per cercare,
         aggiungere e salvare i tuoi luoghi preferiti con un semplice clic.
-      </h5>
+      </p>
+    </div>
       <img src="/src/assets/img/trova.svg" alt="" style="" class="img3"/>
     </div>
   </div>
@@ -154,7 +161,7 @@ export default {};
     width: 31%;
     }
 
-    h5 {
+    h3 {
         font-size: 1rem;
     }
     .img2 {
@@ -205,7 +212,7 @@ export default {};
     width: 31%;
     }
 
-    h5 {
+    h3 {
         font-size: 1rem;
     }
 
